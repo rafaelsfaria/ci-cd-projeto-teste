@@ -45,7 +45,7 @@ describe('Pages', () => {
     expect(res.send.calledOnce).to.be.true
     expect(res.send.calledWith('Divisivel')).to.be.true
   })
-  it('should calc properly - nao divisivel', () => {
+  it('should calc properly - nao divisivel ', () => {
     const req = {
       params: {
         num1: 10,
