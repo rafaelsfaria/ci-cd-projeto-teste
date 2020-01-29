@@ -31,6 +31,15 @@ describe('Pages', () => {
     expect(res.send.calledOnce).to.be.true
     expect(res.send.calledWith('Page2')).to.be.true
   })
+  it('should return page3', () => {
+    const req = {}
+    const res = {
+      send: sinon.spy()
+    }
+    pages.page3(req, res)
+    expect(res.send.calledOnce).to.be.true
+    expect(res.send.calledWith('Page3')).to.be.true
+  })
   it('should calc properly - divisivel', () => {
     const req = {
       params: {
